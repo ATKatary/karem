@@ -1,0 +1,53 @@
+/***** Always True *****/
+@media only screen {
+  html {
+    color: #fff;
+    background: #333;
+  }
+
+  body {
+    font-family: proxima-nova, sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  html, body, #appRoot, #root {
+    width: -webkit-fill-available;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    height: -webkit-fill-available;
+    min-width: 1000px;
+  }
+
+  #appRoot {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ::-webkit-scrollbar {
+      width: 0; 
+      background: transparent; 
+  }
+}
+/***** > 700px *****/
+@media only screen and (min-width: 700px) {
+  html, body, #appRoot {
+    /* min-width: 900px; */
+  }
+}
+
+/***** <= 700px *****/
+@media only screen and (max-width: 700px) {
+
+}

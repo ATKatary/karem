@@ -1,0 +1,139 @@
+/***** Always True *****/
+@media only screen {
+  /*** General Purpose Display Styles ***/
+  .flex {display: flex;}
+  .column {flex-direction: column;}
+  .absolute {position: absolute;}
+  .align-center {align-items: center;}
+  .justify-center {justify-content: center;}
+  .align-self-center {align-self: center;}
+  .scroll {overflow: scroll;}
+  .padding-0 {padding: 0 !important;}
+  .overflow-hidden {overflow:-moz-hidden-unscrollable}
+
+  /*** Sizes ***/
+  .width-40 {width: 40%;}
+  .width-50 {width: 50%;}
+  .width-90 {width: 90%;}
+  .width-100 {width: 100%;}
+  .height-75vw {height: 75vw;}
+  .height-100 {height: 100%;}
+  .width-100px {width: 100px;}
+  .height-50px {height: 50px;}
+  .height-50vw {height: 50vw;}
+
+  /*** Opacities ***/
+  .opacity-95 {opacity: 100%;}
+  .opacity-95:hover {opacity: 95%; z-index: 5 !important; transform: translate3d(0, 0, 200px);}
+
+  /*** Border ***/
+  .border-gray {border: solid 0.3px #c4c4c4;}
+
+  /*** Margins ***/
+  .margin-0 {margin: 0;}
+  .margin-5px {margin: 5px;}
+  .margin-10px {margin: 10px;}
+  .margin-top-20px {margin-top: 20px;}
+  .margin-right-20px {margin: 20px}
+
+  /*** Font Colors ***/
+  .text-black {color: #000 !important;}
+  .text-white {color: #fff !important;}
+
+  /*** Fonts ***/
+  .font-65px {font-size: 65px;}
+  .font-32px {font-size: 32px;}
+  .font-26px {font-size: 26px;}
+  .font-22px {font-size: 22px;}
+  .font-3vw {font-size: max(3vw, 30px) !important;}
+  .font-3-5vw {font-size: max(3.5vw, 35px) !important;}
+  .font-2vw {font-size: max(2vw, 20px) !important;}
+  .font-2-5vw {font-size: max(2.5vw, 25px) !important;}
+  .font-1vw {font-size: max(1vw, 10px) !important;}
+  .font-1-5vw {font-size: max(1.5vw, 15px) !important;}
+
+  /*** Color Gradients ***/
+  .red    {background: linear-gradient(225deg, #F78888 0%, #DA6767 88.84%);}
+  .blue   {background: linear-gradient(225deg, #91FFFF 0%, #87E9FF 88.84%);}
+  .green  {background: linear-gradient(180deg, #39CBB9 0%, #5BFE9E 100%);}
+  .white-back  {background-color: #fff;}
+  .purple {background: linear-gradient(269.15deg, #C183F2 4.11%, #E5B2FF 96.97%);}
+  .orange {background: linear-gradient(225deg, #D69334 0%, #FD8F3C 88.84%);}
+  .yellow {background: linear-gradient(225deg, #FBFF3C 0%, #DCD531 88.84%)}
+  .gray {background: linear-gradient(0deg, #C4C4C4 -55.84%, rgba(196, 196, 196, 0.646899) -55.84%, rgba(196, 196, 196, 0) 94.59%);}
+
+  /*** Shadows ***/
+  .box-shadow {box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+
+  /*** Rotations ***/
+  .rotate-45 {transform: rotate(45deg);}
+  
+  /*** Element Styles ***/
+  nav {
+      z-index: 1;
+      width: 100%;
+  }
+
+  /*** Class Styles ***/
+  .enlarge:hover {
+      z-index: 1;
+      margin-top: 20px;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .image {
+      height: max(30vw, 300px);
+  }
+
+  .slideshow > div {
+      white-space: nowrap;
+      animation: slide infinite 10s alternate;
+  }
+
+  .shuffle > img {
+    white-space: nowrap;
+    animation: slide infinite 10s alternate;
+  }
+  
+  .gallery-project-box {
+    width: 35vw;
+    height: 35vw;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    background-size: cover;
+  }
+
+  .card {
+    border: solid 1px #000;
+    color: #000;
+    background-color: #fff;
+  }
+
+  /*** ID Styles ***/
+
+  /*** Animations ***/
+  .pause:hover {animation-play-state: paused;}
+  .pause:hover > div {animation-play-state: paused;}
+
+  @keyframes slide {
+    0% {
+      margin-left: 0px;
+    }
+    50% {
+      margin-left: -100px;
+    }
+    100% {
+      margin-left: -200px;
+    }
+  }
+}
+
+/***** > 600px *****/
+@media only screen and (min-width: 700px) {
+
+}
+
+/***** <= 600px *****/
+@media only screen and (max-width: 700px) {
+
+}

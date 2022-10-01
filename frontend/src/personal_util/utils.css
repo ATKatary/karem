@@ -1,0 +1,58 @@
+/***** Always True *****/
+@media only screen {
+    /*** General Purpose Display Styles ***/
+    .box-shadow {box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+    
+    /*** Shapes ***/
+    .circle {border-radius: 50%;}
+
+    /*** Solid Backgrounds ***/
+    .yellow-solid {background-color: #EEF078;}
+    .red-solid {background-color: #DA6767;}
+    .blue-solid {background-color: #87E9FF;}
+    .purple-solid {background-color: #C183F2;}
+    .orange-solid {background-color: #FD8F3C;}
+    .green-solid {background-color: #39CBB9;}
+
+    /*** Image Clusters ***/
+    .image-cluster-0-animation {animation: image-cluster-0 20s infinite;}
+    .image-cluster-1-animation {animation: image-cluster-1 10s infinite;}
+    .image-cluster-2-animation {animation: image-cluster-2 15s infinite;}
+    .image-cluster-3-animation {animation: image-cluster-3 15s infinite;}
+    .image-cluster-4-animation {animation: image-cluster-4 20s infinite;}
+
+    /*** Margins ***/
+    .margin-20px {margin: 20px;}
+    
+    /*** Animations ***/
+    @keyframes image-cluster-0 {
+        0%, 100% {background-image: url("../media/images/grayConstruction.png");}
+        50% {background-image: url("../media/images/grayConstruction.png");}
+    }
+
+    @keyframes image-cluster-1 {
+        0%, 100%  {background-image: url("../media/images/grayConstruction.png");}
+    }
+
+    @keyframes image-cluster-2 {
+        0%, 100%  {background-image: url("../media/images/grayConstruction.png");}
+        50%  {background-image: url("../media/images/grayConstruction.png");}
+    }
+
+    @keyframes image-cluster-3 {
+        0%, 100%  {background-image: url("../media/images/grayConstruction.png");}
+        50%  {background-image: url("../media/images/grayConstruction.png");}
+    }
+
+    @keyframes image-cluster-4 {
+        0%, 100%  {background-image: url("../media/images/grayConstruction.png");}
+    }
+}
+
+/***** > 700px *****/
+@media only screen and (min-width: 700px) {
+}
+
+/***** <= 700px *****/
+@media only screen and (max-width: 700px) {
+}
